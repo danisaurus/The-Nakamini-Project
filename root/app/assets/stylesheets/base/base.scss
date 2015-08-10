@@ -1,0 +1,81 @@
+@import 'susy';
+@import '_variables';
+@import '_buttons';
+@import '_grid';
+@import '_spacing';
+
+$susy: (
+  container: 70em,
+  columns: 12,
+  gutters: 1/6
+);
+
+*, *:before, *:after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: $base-font-family;
+	font-weight: $font-weight-regular;
+	color: black(1.0);
+	margin: 0;
+	font-size: 15px;
+	line-height: 1.6;
+}
+
+.serif{
+	font-family: $secondary-font-family;
+}
+
+.sans-serif{
+	font-family: $base-font-family;
+}
+
+.uppercase {
+	text-transform: uppercase;
+}
+
+.heading {
+	font-family: $secondary-font-family;
+	font-weight: $font-weight-semi-bold;
+}
+
+.heading--xl {
+	font-size: $font-size-xl;
+}
+
+.heading--large {
+	font-size: $font-size-large;
+}
+
+.heading--medium {
+	font-size: $font-size-medium;
+}
+
+.heading--small {
+	font-size: $font-size-small;
+}
+
+.heading--xs{
+	font-size: $font-size-xs;
+}
+
+nav {
+	width: 100%;
+	height: 50px;
+	ul {
+		list-style: none;
+		right: 0px;
+		.nav-link {
+			display: inline-block;
+			padding: 5px 10px;
+			text-transform: uppercase;
+		}
+	}
+}
+
+.page-title {
+	width: 100%;
+}
