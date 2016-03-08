@@ -1,0 +1,535 @@
+// font imports
+@import url(https://fonts.googleapis.com/css?family=Nixie+One);
+@import url(https://fonts.googleapis.com/css?family=Raleway:200,400,600);
+
+// variables
+$lightgrey: #7f7f7f;
+$darkgrey: #4c4c4e;
+$serif : 'Nixie One', cursive;
+$sanserif : 'Raleway', sans-serif;
+
+.img-responsive {
+  width: 100%;
+}
+
+// typography
+
+body {
+  font-size: 14px;
+  font-family: $sanserif
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.align-center {
+  margin: 0 auto;
+  text-align: center; 
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.text-block {
+  line-height: 2;
+}
+// headings
+.page-heading {
+  width: auto;
+  overflow: hidden;
+  font-family: $serif;
+  font-size: 3.75em;
+  letter-spacing: 0.5em;
+  text-transform: uppercase;
+  height: 600px;
+  overflow: hidden;
+  position: relative;
+  .page-heading-content {
+    position: absolute;
+    z-index: 1;
+    padding:  85px;
+    h1 {
+      font-size: 2em;
+    }
+  }
+  h1 {
+    span {
+      display: block;
+    }
+  }
+  h2 {
+    font-size: 0.35em;
+    font-family: $sanserif;
+    letter-spacing: 0.1em;
+  }
+  img {
+    width: 100%;
+    z-index: 0;
+  }
+}
+
+.page-content {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.section-heading {
+  position: relative;
+  font-family: $serif;
+  font-size: 36px;
+  text-transform: uppercase;
+  color: $darkgrey;
+  letter-spacing: 12px;
+  .line-one {
+    display: block;
+    font-weight: 600;
+    font-size: 24px;
+    font-family: $sanserif;
+    color: $lightgrey;
+    letter-spacing: 6px;
+  }
+  .line-two {
+    display: block;
+    font-size: 50px;
+  }
+}
+
+// padding classes
+.pad-all {
+	padding: 15px;
+}
+.pad-all-medium {
+  padding: 10px;
+}
+.pad-all-small {
+	padding: 5px;
+}
+.pad-vert {
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+.pad-vert-medium {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.pad-vert-small {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.pad-horiz {
+	padding: 0 15px;
+}
+.pad-horiz-medium {
+  padding: 0 10px;
+}
+.pad-horiz-small {
+  padding: 0 5px;
+}
+.pad-top {
+	padding-top: 15px;
+}
+.pad-top-medium {
+  padding-top: 10px;
+}
+.pad-top-small {
+  padding-top: 5px;
+}
+.pad-right {
+	padding-right: 15px;
+}
+.pad-right-medium {
+  padding-right: 10px;
+}
+.pad-right-small {
+  padding-right: 5px;
+}
+.pad-bottom {
+	padding-bottom: 15px;
+}
+.pad-bottom-medium {
+  padding-bottom: 10px;
+}
+.pad-bottom-small {
+  padding-bottom: 5px;
+}
+.pad-left {
+	padding-left: 15px;
+}
+.pad-left-medium {
+  padding-left: 10px;
+}
+.pad-left-small {
+	padding-left: 5px;
+}
+.pad-none {
+	padding: 0;
+}
+.pad-horiz-none {
+	padding-left: 0;
+	padding-right: 0;
+}
+.pad-right-none {
+	padding-right: 0;
+}
+.pad-left-none {
+  	padding-left: 0;
+}
+.pad-top-none {
+  padding-top: 0;
+}
+.pad-bottom-none {
+  padding-bottom: 0;
+}
+//margin classes
+
+.margin-all {
+	margin: 15px;
+}
+.margin-all-medium {
+  margin: 10px;
+}
+.margin-all-small {
+	margin: 5px;
+}
+.margin-vert {
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+.margin-vert-medium {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.margin-vert-small {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.margin-horiz {
+	margin: 0 15px;
+}
+.margin-horiz-medium {
+  margin: 0 10px;
+}
+.margin-horiz-small {
+  margin: 0 5px;
+}
+.margin-top {
+	margin-top: 15px;
+}
+.margin-top-medium {
+  margin-top: 10px;
+}
+.margin-top-small {
+  margin-top: 5px;
+}
+.margin-right {
+	margin-right: 15px;
+}
+.margin-right-medium {
+  margin-right: 10px;
+}
+.margin-right-small {
+  margin-right: 5px;
+}
+.margin-bottom {
+	margin-bottom: 15px;
+}
+.margin-bottom-medium {
+  margin-bottom: 10px;
+}
+.margin-bottom-small {
+  margin-bottom: 5px;
+}
+.margin-left {
+	margin-left: 15px;
+}
+.margin-left-medium {
+  margin-left: 10px;
+}
+.margin-left-small {
+	margin-left: 5px;
+}
+.margin-none {
+	margin: 0;
+}
+.margin-horiz-none {
+	margin-left: 0;
+	margin-right: 0;
+}
+.margin-right-none {
+	margin-right: 0;
+}
+.margin-left-none {
+  	margin-left: 0;
+}
+.margin-top-none {
+  margin-top: 0;
+}
+.margin-bottom-none {
+  margin-bottom: 0;
+}
+// display classes
+.block {
+	display: block;
+}
+.inline-block {
+  display: inline-block;
+}
+
+//list classes
+
+ul, ol {
+	margin: 0 0 10px 0;
+	padding: 0;
+	li {
+		margin: 0;
+		list-style-position: outside;
+		margin: 4px 0 4px 25px;
+	}
+	ul, ol {
+		margin-left: 15px;
+	}
+}
+
+ol {
+	ol {
+		list-style: lower-alpha;
+		ol {
+			list-style: lower-roman;
+		}
+	}
+}
+
+ul.unstyled, ol.unstyled, ul.inline, ol.inline {
+	list-style: none;
+	li {
+		margin: 0;
+	}
+	ul li, ol li {
+		margin-left: 20px;
+	}
+  &.pipe {
+    li:first-child:before {
+      content: "";
+    }
+    li:before {
+      content: "|";
+      padding: 0px -20px;
+      margin-left: -10px;
+      margin-right: 10px;   
+    }
+  }
+  &.bullet {
+    li:first-child:before {
+      content: "";
+    }
+    li:before {
+      content: "\25C9";
+      padding: 0px -20px;
+      margin-left: -10px;
+      margin-right: 10px;
+    }
+  }
+}
+
+ul.inline, ol.inline {
+	li {
+		display: inline;
+		padding: 0 10px;
+	}
+}
+
+a {
+  color: $lightgrey;
+  &:hover {
+    color: $darkgrey;
+  }
+}
+
+nav {
+  a {
+    color: white;
+    &:hover {
+      color: black;
+    }
+  }
+}
+
+// button styles
+.btn {
+  background-color: transparent;
+  border: 2px solid;
+  font-family: $sanserif;
+  border-radius: 3px;
+  color: black;
+  text-decoration: none;
+  
+  padding: 0 1.5em;
+  height: 45px;
+  margin: 0;
+  display: inline-block;
+  box-sizing: border-box;
+  line-height: 42px;
+  
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: .1em;
+  
+  cursor: pointer;
+
+  &:focus { 
+  outline: none;
+  }
+}
+
+
+
+
+/* STEP 2: Skins */
+.btn-primary {
+  background: #fff;
+  border-color: #444;
+  color: #444;
+}
+
+.btn-secondary {
+  background: #fff;
+  border-color: #ccc;
+  color: #666;
+}
+
+.btn-tertiary {
+  background: #eaeaea;
+  border-color: #eaeaea;
+  color: #666;
+}
+
+
+
+
+/* STEP 3: States */
+.btn-primary:hover {
+  background: #9ab833;
+  border-color: #9ab833;
+  color: #fff;
+}
+
+.btn-secondary:hover {
+  background: #666;
+  border-color: #666;
+  color: #fff;
+}
+
+.btn-tertiary:hover {
+  background: #ccc;
+  border-color: #ccc;
+  color: #fff;
+}
+
+
+
+
+/* STEP 4: Modifiers */
+.btn-medium {
+  /*height: 36px;
+  line-height: 32px;
+  padding: 0 1em;*/
+}
+
+.btn-small {
+  /*font-size: 12px;
+  height: 24px;
+  line-height: 20px;
+  padding: 0 .75em;*/
+}
+
+.btn-block {
+  /* display: block; */
+  /* width: 100%; */
+  /* margin: 1em 0; */
+}
+
+// navigation
+.fixed-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  height: 50px;
+  background-color: $darkgrey;
+  letter-spacing: 2px;
+  font-weight: 200;
+  font-family: $sanserif;
+  font-size: 14px;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 9999;
+    width: 100%;
+    height: 50px;
+    background-color: #4c4c4e;
+    letter-spacing: 2px;
+    font-weight: 200;
+    font-family: "Raleway", sans-serif;
+    font-size: 14px;
+}
+
+// form elements
+input{
+  border: none;
+}
+textarea {
+  border: none;
+}
+.input-group {
+  border: 1px solid #444;
+  height: 50px;
+  label{
+    height: 50px;
+     }
+  input{
+    height: 50px;
+    padding: 0px 15px;
+    border-left: 1px solid #444;
+  }
+}
+
+.text-area-group {
+  border: 1px solid #444;
+  height: 100px;
+  padding-top: 15px;
+  label {
+    height: 50px;
+    width: 100%;
+  }
+  textarea {
+    height: 30px;
+    padding: 15px;
+    width: 100%;
+    border-top: 1px solid #444;
+  }
+}
+
+// typography
+.inverse {
+  color: #fff;
+}
+
+// button styles
+
+
