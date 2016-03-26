@@ -1,1 +1,3 @@
-# The-Nakamini-Project
+# NakaminiProject
+
+a [Sails](http://sailsjs.org) application
