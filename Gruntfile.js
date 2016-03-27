@@ -73,7 +73,6 @@ module.exports = function(grunt) {
 	}
 
 	// Run task functions to configure Grunt.
-	grunt.loadNpmTasks('grunt-contrib-sass');
 	invokeConfigFn(taskConfigurations);
 	invokeConfigFn(registerDefinitions);
 
