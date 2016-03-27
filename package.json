@@ -39,5 +39,7 @@
     "url": "https://github.com/dani.dirks/NakaminiProject/issues"
   },
   "homepage": "https://github.com/dani.dirks/NakaminiProject#readme",
-  "devDependencies": {}
+  "devDependencies": {
+    "grunt-contrib-sass": "^1.0.0"
+  }
 }
